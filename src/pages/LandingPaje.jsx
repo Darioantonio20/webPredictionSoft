@@ -6,6 +6,7 @@ import MomentoERP from "../components/atoms/MomentoERP";
 import ImplementacionPrediction from "../components/atoms/ImplementacionPrediction";
 import Nosotros from "../components/atoms/Nosotros";
 import Beneficios from "../components/atoms/Beneficios";
+import Footer from "../components/atoms/Footer";
 
 function LandingPage() {
     return ( 
@@ -18,6 +19,8 @@ function LandingPage() {
             <ImplementacionPrediction/>
             <Nosotros/>
             <Beneficios/>
+            
+            <Footer/>
         </>
      );
 }
