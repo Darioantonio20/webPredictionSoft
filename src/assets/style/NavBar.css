@@ -1,0 +1,12 @@
+.nav-hover:hover {
+    transform: scale(1.1);
+    transition: color 1s;
+}
+.nav-link {
+    color: #68a8bd;
+    font-size: 1.4rem; /* Aumenta el tamaño del texto */
+    transition: color 1s; /* Agrega una transición para suavizar el cambio de color */
+}
+.nav-link:hover {
+    color: #3c7588; /* Cambia el color al pasar el mouse sobre los elementos */
+}
