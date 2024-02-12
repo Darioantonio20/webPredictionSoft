@@ -10,6 +10,7 @@ import Beneficios from "../components/atoms/Beneficios";
 import Footer from "../components/atoms/Footer";
 import ContactUs from "../components/atoms/ContactUs";
 import PruebaDeSistema from "../components/atoms/PruebaDeSistema";
+import VideoPrediction from '../components/atoms/VideoPrediction';
 import "../assets/style/LandingPage.css";
 
 function LandingPage() {
@@ -45,6 +46,7 @@ function LandingPage() {
             <Nosotros/>
             <Beneficios/>
             <PruebaDeSistema/>
+            <VideoPrediction/>
             <ContactUs/>
             <Footer/>
             {showScrollButton && (
