@@ -158,7 +158,7 @@ function ContactUs() {
             </div>
           </div>
           {/* Form section */}
-          <div className="col-md-6 m-3">
+          <div className="col-md-6 mt-5 m-3">
             <form className="row g-3" onSubmit={handleSubmit}>
               <div className="col-md-6">
                 {/* Name */}

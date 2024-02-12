@@ -8,6 +8,7 @@ import Nosotros from "../components/atoms/Nosotros";
 import Beneficios from "../components/atoms/Beneficios";
 import Footer from "../components/atoms/Footer";
 import ContactUs from "../components/atoms/ContactUs";
+import PruebaDeSistema from "../components/atoms/PruebaDeSistema";
 
 function LandingPage() {
     return ( 
@@ -20,6 +21,7 @@ function LandingPage() {
             <ImplementacionPrediction/>
             <Nosotros/>
             <Beneficios/>
+            <PruebaDeSistema/>
             <ContactUs/>
             <Footer/>
         </>
