@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import NavBar from "../components/atoms/NavBar";
 import Carrousel from "../components/atoms/Carrousel";
 import CircleCard from "../components/atoms/CircleCard";
@@ -9,8 +10,30 @@ import Beneficios from "../components/atoms/Beneficios";
 import Footer from "../components/atoms/Footer";
 import ContactUs from "../components/atoms/ContactUs";
 import PruebaDeSistema from "../components/atoms/PruebaDeSistema";
+import "../assets/style/LandingPage.css";
 
 function LandingPage() {
+    const [showScrollButton, setShowScrollButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setShowScrollButton(true);
+            } else {
+                setShowScrollButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const scrollToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return ( 
         <>
             <NavBar/>
@@ -24,6 +47,11 @@ function LandingPage() {
             <PruebaDeSistema/>
             <ContactUs/>
             <Footer/>
+            {showScrollButton && (
+                <button className="scroll-button" onClick={scrollToTop}>
+                    /\
+                </button>
+            )}
         </>
      );
 }
