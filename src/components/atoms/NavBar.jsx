@@ -19,6 +19,7 @@ function NavBar() {
     return (
         <>
             <nav className="navbar navbar-expand-md navbar-light bg-light">
+                <div id="arriba"/>
                 <div className="container-fluid">
                     <a className="navbar-brand" onClick={() => handleNavigation('/')}>
                         <img src={LogoPredictionSoft} className="img-fluid" loading="lazy" alt="Img Prediction Soft" width={200} height={200} />

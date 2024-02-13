@@ -1,14 +1,21 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Swal from 'sweetalert2';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import LogoPredictionSoft from "../assets/img/logoPredictionSoft.svg";
 import ImgPlanAnual from "../../src/assets/img/planAnual.jpeg";
 import ImgPlanMensual from "../../src/assets/img/planMensual.jpeg";
 import Footer from "../components/atoms/Footer";
 import "../assets/style/NavBar.css";
 
-
 function Promociones() {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000,
+        });
+    }, []);
 
     const handleClickProximamente = (e) => {
         e.preventDefault();
@@ -20,7 +27,7 @@ function Promociones() {
 
     return ( 
         <>
-            <nav className="navbar navbar-expand-md navbar-light">
+            <nav className="navbar navbar-expand-md navbar-light" data-aos="fade-up">
                 <div id="arriba" />
                 <div className="container-fluid">
                     <Link to="/"><a className="navbar-brand" href="#">
@@ -53,21 +60,21 @@ function Promociones() {
                     </div>
                 </div>
             </nav>
-            <div className="container-fluid">
+            <div className="container-fluid" data-aos="fade-up">
                 <div className="row justify-content-center">
                     <div className="col-md-12 mt-5 mb-5 text-center">
-                        <img src={ImgPlanAnual} loading="lazy" className="img-fluid" alt="Imagen 1 Section 2" />
+                        <img src={ImgPlanAnual} loading="lazy" className="img-fluid" alt="Imagen 1 Section 2" style={{ width: "60%" }} />
                     </div>
                 </div>
             </div>
-            <div className="container-fluid">
+            <div className="container-fluid" data-aos="fade-up">
                 <div className="row justify-content-center">
                     <div className="col-md-12 mt-5 mb-5 text-center">
-                        <img src={ImgPlanMensual} loading="lazy" className="img-fluid" alt="Imagen 1 Section 2" />
+                        <img src={ImgPlanMensual} loading="lazy" className="img-fluid" alt="Imagen 1 Section 2" style={{ width: "60%" }}/>
                     </div>
                 </div>
             </div>
-        <Footer/>
+            <Footer data-aos="fade-up"/>
         </>
      );
 }

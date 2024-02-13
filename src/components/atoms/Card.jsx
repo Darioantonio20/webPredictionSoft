@@ -34,6 +34,7 @@ function Card() {
                                 viewBox="0 0 512 512"
                                 height="50"
                                 id="Layer_1"
+                                loading="lazy"
                               />
                               <g>
                                 <g>
@@ -132,7 +133,7 @@ function Card() {
                                     href="https://www.facebook.com/matrixrinesyllantas"
                                     target="_blank"
                                   >
-                                    <img src={IconoFacebook} />
+                                    <img src={IconoFacebook} loading="lazy"/>
                                   </a>
                                 </button>
                               </center>
@@ -159,6 +160,7 @@ function Card() {
                                 viewBox="0 0 512 512"
                                 height="50"
                                 id="Layer_1"
+                                loading="lazy"
                               />
                               <g>
                                 <g>
@@ -257,7 +259,7 @@ function Card() {
                                     href="https://www.facebook.com/profile.php?id=100073402030459"
                                     target="_blank"
                                   >
-                                    <img src={IconoFacebook} />
+                                    <img src={IconoFacebook} loading="lazy"/>
                                   </a>
                                 </button>
                                 <button className="read_more_btn" type="button">
@@ -266,6 +268,7 @@ function Card() {
                                       width={35}
                                       height={35}
                                       src={IconoWhatsApp}
+                                      loading="lazy"
                                     />
                                   </a>
                                 </button>
@@ -306,6 +309,7 @@ function Card() {
                                 viewBox="0 0 512 512"
                                 height="50"
                                 id="Layer_1"
+                                loading="lazy"
                               />
                               <g>
                                 <g>
@@ -406,6 +410,7 @@ function Card() {
                                       width={35}
                                       height={35}
                                       src={IconoWhatsApp}
+                                      loading="lazy"
                                     />
                                   </a>
                                 </button>
@@ -433,6 +438,7 @@ function Card() {
                                 viewBox="0 0 512 512"
                                 height="50"
                                 id="Layer_1"
+                                loading="lazy"
                               />
                               <g>
                                 <g>
@@ -536,7 +542,7 @@ function Card() {
                                     href="https://www.facebook.com/cjcagropartes"
                                     target="_blank"
                                   >
-                                    <img src={IconoFacebook} />
+                                    <img src={IconoFacebook} loading="lazy"/>
                                   </a>
                                 </button>
                                 <button className="read_more_btn" type="button">
@@ -545,6 +551,7 @@ function Card() {
                                       width={35}
                                       height={35}
                                       src={IconoWhatsApp}
+                                      loading="lazy"
                                     />
                                   </a>
                                 </button>
@@ -576,6 +583,7 @@ function Card() {
                                 viewBox="0 0 512 512"
                                 height="50"
                                 id="Layer_1"
+                                loading="lazy"
                               />
                               <g>
                                 <g>
@@ -675,12 +683,13 @@ function Card() {
                                       width={35}
                                       height={35}
                                       src={IconoWhatsApp}
+                                      loading="lazy"
                                     />
                                   </a>
                                 </button>
                                 <button className="read_more_btn" type="button">
                                   <a href="https://www.facebook.com/lightcenter.merida" target="_blank">
-                                    <img src={IconoFacebook} />
+                                    <img src={IconoFacebook} loading="lazy"/>
                                   </a>
                                 </button>
                               </center>
