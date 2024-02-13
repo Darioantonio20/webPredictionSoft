@@ -12,6 +12,7 @@ import ContactUs from "../components/atoms/ContactUs";
 import PruebaDeSistema from "../components/atoms/PruebaDeSistema";
 import VideoPrediction from '../components/atoms/VideoPrediction';
 import "../assets/style/LandingPage.css";
+import Card from '../components/atoms/Card';
 
 function LandingPage() {
     const [showScrollButton, setShowScrollButton] = useState(false);
@@ -47,6 +48,7 @@ function LandingPage() {
             <Beneficios/>
             <PruebaDeSistema/>
             <VideoPrediction/>
+            <Card/>
             <ContactUs/>
             <Footer/>
             {showScrollButton && (
