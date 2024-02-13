@@ -1,8 +1,24 @@
-# React + Vite
+# Web Prediction Software
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un software de PredictionSoft desarrollado por:
 
-Currently, two official plugins are available:
+- **Darío Antonio Gutiérrez Álvarez** - Matrícula: 221245 
+- **Luis Alejandro Martínez Montoya** - Matrícula: 213021
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción del Proyecto
+
+Web Prediction Software es una aplicación web diseñada para dar cotizaciòn sobre el ERP al igual que contactarlos mediante el Contact Us
+
+## Instalación
+
+Para instalar y configurar este software en tu máquina local, sigue los siguientes pasos:
+
+```bash
+# Clona el repositorio
+git clone https://github.com/Darioantonio20/webPredictionSoft
+
+# Navega al directorio del proyecto
+cd webPredictionSoft
+
+# Instala las dependencias
+npm install
