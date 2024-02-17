@@ -45,17 +45,16 @@ function FormLinkRestringido() {
                 text: 'Por favor llena todos los campos del formulario!',
             });
         } else {
-            fetch('https://backendpredictionsoft-production.up.railway.app/api/user', {
+            fetch('http://localhost:8080/api/user/nuevoFormulario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     nombre: formData.name,
-                    titulo: formData.subject,
-                    telefono: formData.phone,
-                    mensaje: formData.rfc,
                     email: formData.email,
+                    telefono: formData.phone,
+                    rfc: formData.rfc, 
                 }),
             })
                 .then((response) => response.json())
